@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-#pragma clang warning -Wdelete-non-virtual-dtor
-
 // 虚显式拷贝函数实现深拷贝，拷贝构造函数无法声明为虚
 class Fish {
 public:

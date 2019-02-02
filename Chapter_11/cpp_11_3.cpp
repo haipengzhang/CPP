@@ -30,7 +30,7 @@ int main() {
 	cout << "Allocating a Tuna on the fress store:" << endl;
 	Tuna* pTuna = new Tuna;
 	cout << "Deleting the Tuna:" << endl;
-	// 如果传引用在函数外释放，会只调用引用类的析构函数
+	// 如果传引用在函数外释放，会只调用引用类的析构函数,此示例会导致内存泄漏
 	DeleteFishMemory(pTuna);
 	// delete pTuna; 如果这么释放也不会存在问题
 
