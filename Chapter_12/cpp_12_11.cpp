@@ -5,6 +5,7 @@ using namespace std;
 // 函数运算符operator()
 class CDisplay {
 public:
+	// const的函数内部只能调用const的函数
 	void operator() (string input) const {
 		cout << input << endl;
 	}
